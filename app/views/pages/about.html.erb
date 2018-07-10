@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>About Page</title>
+    <style>
+      * {
+        font-family: verdana;
+      }
+
+      h1 {
+        text-decoration: underline;
+        font-size: 2rem;
+        text-align: center;
+        margin-bottom: 3rem;
+      }
+
+      h3 {
+        text-align:center;
+        margin-bottom: 2rem;
+      }
+      
+      #portrait {
+        text-align: center;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1 > About Page </h1>
+
+    <h3> Self Portrait</h3>
+      <div id="portrait"><%= link_to image_tag('Self_portrait.PNG'), 'https://github.com/jmccarthy92'  %></div>
+      
+    <h3> About Me</h3>
+      <p>Software developer with on-hand experience in software design, full stack web/application development, and mobile application development.
+
+      Highly skilled in the PHP, Javascript, Java, C#, Python, and SQL languages with a strong understanding of other languages such as C++ and R.
+
+      Worked on large projects utilizing the following frameworks:
+    <ul>
+      <li>Java Frameworks: JavaFX, Hibernate, Swing, Room Persistence library, Android Studio, Hadoop MapReduce.</li>
+      <li>Javascript Frameworks: Node.js, React.js, Redux, React-router, Express, MongoDB, jQuery, Webpack, Babel</li>
+      <li>PHP Frameworks: Silex, Symfony, Guzzle</li>
+      <li>Python Frameworks: Django, Numpy, Matplotlib, Scipy, Python-react)</li>
+      <li>Front-end HTML/CSS Frameworks: Semantic UI, Bootstrap, Foundation</li>
+    </ul>
+      Highly proficient in writing SQL code accompanied by experience using industry standard relational databases systems including MySQL, Microsoft SQL Server, and PostgreSQL. Additionally proficient in NoSQL databases such as MongoDB and Redis.
+
+      "Most good programmers do programming not because they expect to get paid or get adulation by the public, but because it is fun to program."
+      - Linus Torvalds
+
+      Thanks for stopping by and taking the time to read a little about me!
+
+      </p>
+    <%= link_to 'Home', root_path %>
+  </body>
+</html>
