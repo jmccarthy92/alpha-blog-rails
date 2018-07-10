@@ -1,1 +1,1 @@
-This is the respotiry for the first alpha-blog app of the RoR course for new Job.
+This is the repository for the first alpha-blog app of the RoR course for new Job.
