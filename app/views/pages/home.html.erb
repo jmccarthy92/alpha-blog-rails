@@ -21,7 +21,10 @@
   </head>
 
   <body>
-    <h1 > Home Page </h1>
+    <div class="center jumbotron">
+      <h1>ALPHA BLOG</h1>
+       <%= link_to "Sign up now", "#", class: "btn btn-danger btn-lg  btn-xlarge" %> 
+    </div>
 
     <h3> Welcome to this page </h3>
       <p>Check it out, y'all. Everyone who was invited is here. What's with you
@@ -41,6 +44,6 @@
          He struck a chord with the voters when he pledged not to go on a killing spree.
          Oh no! The professor will hit me! But if Zoidberg 'fixes' it… then perhaps gifts!
       </p>
-    <%= link_to "Alpha Blog", articles_path %> | <%= link_to 'About', about_path %>
+   | <%= link_to 'About', about_path %>
   </body>
 </html>
