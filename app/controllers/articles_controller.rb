@@ -3,7 +3,8 @@ class ArticlesController < ApplicationController
   before_action :set_article, only: [:edit, :update, :show, :destroy]
   
   def index
-    @articles = Article.all
+    # loads default items which is 20 if per_page is not specified
+    @articles = Article.paginate(page: params[:page], per_page: 5)
   end
   
   def new
@@ -16,7 +17,7 @@ class ArticlesController < ApplicationController
   
   def create
     # to use byebug debugger
-    debugger 
+    # debugger 
     @article = Article.new(article_params)
     # @article.user = User.first
     if @article.save
